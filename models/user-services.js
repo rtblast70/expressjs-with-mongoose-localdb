@@ -14,15 +14,12 @@ async function getUsers(name, job){
     if (name === undefined && job === undefined){
         result = await userModel.find();
     }
-    else if (name && (job === undefined)) {
+    else if (name && !job) {
         result = await findUserByName(name);
     }
-    else if (job && (name === undefined)){
+    else if (job && !name){
         result = await findUserByJob(job);
-    }
-    else {
-        result = await findUserByNameAndJob(name, job);
-    }    
+    }   
     return result;  
 }
 
