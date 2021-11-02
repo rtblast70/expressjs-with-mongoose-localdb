@@ -4,7 +4,7 @@
   "description": "",
   "main": "backend_with_db.js",
   "scripts": {
-    "test": "prettier --check . && jest",
+    "test": "prettier --check .",
     "dev": "nodemon backend_with_db.js"
   },
   "author": "Dr. da Silva",
