@@ -4,7 +4,7 @@
   "description": "",
   "main": "backend_with_db.js",
   "scripts": {
-    "test": "prettier --check .",
+    "test": "prettier --check . && jest",
     "dev": "nodemon backend_with_db.js"
   },
   "author": "Dr. da Silva",
@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "jest": "^27.3.1",
     "mongoose": "^6.0.10"
   },
   "devDependencies": {
